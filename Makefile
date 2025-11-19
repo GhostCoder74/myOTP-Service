@@ -1,6 +1,6 @@
 # ============================================================
 # myOTP-Service – Makefile
-# Installiert:
+# Installs:
 #   /opt/otp-service/*
 #   /etc/otp-service/*
 #   /etc/nginx/sites-available/otp-service.conf
