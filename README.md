@@ -131,5 +131,8 @@ sudo /opt/otp-service/venv/bin/python /opt/otp-service/otp-adduser.py --username
 sudo mysql < sql.dump
 # (or SQLite depending on configuration)
 ```
-# License 
-[GPL](https://www.gnu.org/licenses/#GPL)
+## 📝License
+
+### Licensed under GPL-3.0-or-later
+
+See: [LICENSE](https://www.gnu.org/licenses/#GPL)
