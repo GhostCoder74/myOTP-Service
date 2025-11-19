@@ -1,0 +1,134 @@
+/* ============================================================
+   Default CSS Theme for OTP-Service
+   Author: Ghost Coder
+   Location: /opt/otp-service/static/default.css
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --bg-color: #111;
+  --bg-card: #1e1e1e;
+  --text-color: #e8e8e8;
+  --accent-color: #ff6600;
+  --accent-hover: #ffa347;
+  --border-color: #333;
+  --success: #4caf50;
+  --error: #f44336;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+button, input[type="submit"] {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover, input[type="submit"]:hover {
+  background: var(--accent-hover);
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: #2a2a2a;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+table th, table td {
+  border: 1px solid var(--border-color);
+  padding: 0.6rem;
+  text-align: left;
+}
+table th {
+  background: #222;
+  color: var(--accent-color);
+}
+
+.alert-success {
+  background: var(--success);
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.alert-error {
+  background: var(--error);
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 2rem;
+}
+
+/* Small Devices */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+}

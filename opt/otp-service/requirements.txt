@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pyotp
+qrcode
+pillow
+mysql-connector-python
+passlib[bcrypt]
+python-multipart

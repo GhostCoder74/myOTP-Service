@@ -1,0 +1,57 @@
+-- 
+-- SQL Dump of database: `otp-service`
+-- 
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Creating database: `otp-service`
+--
+
+CREATE DATABASE `otp-service` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'otpuser'@'localhost' IDENTIFIED BY 'super-secret-passphrase-for-otp-service';
+GRANT ALL PRIVILEGES ON `otp-service`.* TO 'otpuser'@'localhost';
+FLUSH PRIVILEGES;
+
+use otp-service;
+
+-- --------------------------------------------------------
+
+--
+-- Structure of table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(64) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `otp_secret` varchar(64) DEFAULT NULL,
+  `is_admin` tinyint(1) NOT NULL DEFAULT 0,
+  `role` varchar(32) DEFAULT 'user',
+  `acl` text DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `last_login` datetime DEFAULT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Indexes table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+-- 
+-- Insert default "admin" Admin-User (Password: admin)
+--
+INSERT INTO `users` (username, password_hash, otp_secret)
+VALUES ('admin', '$2b$12$yC1D9JK0eX4bgMy5xT/0nO0E4MxN4zEvuPEVls4/jxkV7bIh1BQQ6', NULL);

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #0a0014;
+  --bg-card: #1b001f;
+  --text-color: #f0e6ff;
+  --accent-color: #ff6600;
+  --accent-hover: #ff9933;
+  --border-color: #3d003d;
+  --success: #77ff66;
+  --error: #ff3366;
+}
+
+body {
+  background: radial-gradient(circle at center, #1b001f 0%, #0a0014 100%);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #0f001b;
+  border-bottom: 2px solid var(--border-color);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Creepster', cursive;
+  color: var(--accent-color);
+  font-size: 2.2rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 20px var(--accent-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.2);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--accent-hover);
+}
