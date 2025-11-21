@@ -1,6 +1,10 @@
-# OTP-Service – Lightweight One-Time-Passcode Web Service
+# myOTP-Service – Lightweight One-Time-Passcode Web Service
 
-The **OTP-Service** is a lightweight and extensible web-based One-Time-Passcode (OTP) system.  
+<p align="center">
+  <img src="opt/otp-service/static/logo/myOTP-Service-Logo.jpeg" alt="mymyOTP-Service logo" width="280">
+</p>
+
+The **myOTP-Service** is a lightweight and extensible web-based One-Time-Passcode (OTP) system.  
 It provides user registration, QR-code generation, OTP validation, and database-backed user management.
 
 The service is designed to run behind **Nginx** and can be managed using a **systemd service unit**.  
