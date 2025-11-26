@@ -1,7 +1,7 @@
 # myOTP-Service – Lightweight One-Time-Passcode Web Service
 
 <p align="center">
-  <img src="opt/otp-service/static/logo/myOTP-Service-Logo.jpeg" alt="mymyOTP-Service logo" width="280">
+  <img src="opt/otp-service/static/logo/myOTP-Service-Logo.jpeg" alt="myOTP-Service logo" width="280">
 </p>
 
 The **myOTP-Service** is a lightweight and extensible web-based One-Time-Passcode (OTP) system.  

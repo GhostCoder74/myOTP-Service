@@ -1,3 +1,16 @@
+# -----------------------------------------------------------------------------
+# Project:        myOTP-Service
+# File:           otp-adduser.py
+# Author:         Christian Klose
+# Email:          ghostcoder@gmx.de
+# GitHub:         https://github.com/GhostCoder74/Set-Project-Headers (GhostCoder74)
+# Copyright (c) 2025 Christian Klose
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# This file is part of myOTP-Service.
+# Do not remove this header.
+# Header added by https://github.com/GhostCoder74/Set-Project-Headers
+# -----------------------------------------------------------------------------
 """
 Script for creating a user for the OTP service
 Uses the DB credentials from /etc/otp-service/db.conf
